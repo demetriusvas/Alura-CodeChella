@@ -1,0 +1,42 @@
+body {
+    
+}
+
+header{
+    background-color: #4650BD;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+main{
+    border: 1px solid yellow;
+}
+
+footer{
+    border: 1px solid green;
+}
+  
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+    body {
+        background-color: burlywood;
+    }
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: cadetblue;
+    }
+} 
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1440px) {
+    body {
+        background-color: darkseagreen;
+    }
+}
