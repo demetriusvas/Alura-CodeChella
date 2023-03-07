@@ -3,23 +3,12 @@
     --fonte-textos: 'Raleway', sans-serif;
 }
 
-
 header{
     background-color: #4650BD;
-    padding: 32px 120px;
-    display: flex;
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    gap: 32px;
 }
 
 nav a{
     color: white;
-    /* padding: 0 32px; */
     text-decoration: none;
     font-family: var(--fonte-textos);
     font-weight: 700;
@@ -36,4 +25,134 @@ footer{
     border: 1px solid green;
     padding: 32px 120px;
     
+}
+
+
+/**
+ * ------------------------------------------
+ *  Responsive Grid Media Queries - 1280, 1024, 768, 480
+ *   1280-more   - desktop 4k
+ *   1280-1024   - desktop (default grid)
+ *   1024-768    - tablet landscape
+ *   768-480     - tablet 
+ *   480-less    - phone landscape & smaller
+ * --------------------------------------------
+ */
+
+ @media all and (max-width: 480px) {
+    header{
+        display: flex;
+        padding: 32px 24px;
+        flex-direction: row;
+        align-items: center;
+        gap: 28px;
+        justify-content: space-around;
+    }
+    
+    nav{
+        display: none;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    header{
+        display: flex;
+        padding: 32px 24px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 28px;
+    }
+    
+    nav{
+        display: none;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    header{
+        display: flex;
+        padding: 32px 60px 32px 60px;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 32px; */
+    }
+    
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+    }
+
+    .icon{
+        display: none;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+    header{
+        padding: 32px 100px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    nav{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        gap: 28px;
+    }
+
+    .icon{
+        display: none;
+    }
+}
+
+@media all and (min-width: 1280px) and (max-width: 1440px){
+    header{
+        padding: 32px 120px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    nav{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        gap: 32px;
+    }
+
+    .icon{
+        display: none;
+    }
+}
+
+@media all and (min-width: 1440px){
+    body{
+        max-width: 1440px;
+        background-color: #4650BD;
+        margin: auto;
+    }
+
+    .container{
+        border: 5px solid red;
+    }
+    
+    header{
+        padding: 32px 120px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    nav{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        gap: 32px;
+    }
+
+    .icon{
+        display: none;
+    }
 }
