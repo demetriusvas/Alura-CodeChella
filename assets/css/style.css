@@ -1,3 +1,9 @@
+:root{
+    --fonte-titulos: 'Calistoga', cursive;
+    --fonte-textos: 'Raleway', sans-serif;
+}
+
+
 header{
     background-color: #4650BD;
     padding: 32px 120px;
@@ -8,12 +14,17 @@ nav{
     display: flex;
     align-items: center;
     margin-left: auto;
+    gap: 32px;
 }
 
 nav a{
     color: white;
-    padding: 0 10px;
+    /* padding: 0 32px; */
     text-decoration: none;
+    font-family: var(--fonte-textos);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
 }
 
 main{
