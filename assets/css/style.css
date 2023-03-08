@@ -24,7 +24,6 @@ main{
 footer{
     display: flex;
     background-color: #4650BD;
-    border: 1px solid green;
     height: 232px;
     padding: 0 120px;
     color: white;
@@ -33,7 +32,12 @@ footer{
     line-height: 40px;
     align-items: center;
     justify-content: space-around;
-    
+}
+
+.rodape__links{
+    /* border: 1px solid red; */
+    display: flex;
+
 }
 
 
